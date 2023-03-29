@@ -21,42 +21,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 // Проверяем ошибки.
 $errors = FALSE;
 if (empty($_POST['fio'])) {
-  print('Заполните имя.<br/>');
+  print('Необходимо заполнить имя.<br/>');
   $errors = TRUE;
 }
 
 if (empty($_POST['email'])) {
-  print('Заполните почту.<br/>');
+  print('Необходимо заполнить почту.<br/>');
   $errors = TRUE;
 }
 
 if (empty($_POST['year']) || !is_numeric($_POST['year']) || !preg_match('/^\d+$/', $_POST['year'])) {
-  print('Заполните год.<br/>');
+  print('Необходимо заполнить год рождения.<br/>');
   $errors = TRUE;
 }
 
 if(empty($_POST['biography'])) {
-  print('Заполните биографию.<br/>');
+  print('Необходимо заполнить биографию.<br/>');
   $errors = TRUE;
 }
 
 if(!isset($_POST['r1'])){
-  print('Выберите пол.<br/>');
+  print('Необходимо выбрать пол.<br/>');
   $errors = TRUE;
 }
 
 if(!isset($_POST['abilities'])){
-  print('Выберите сверхспособности.<br/>');
+  print('Необходимо выбрать сверхспособности.<br/>');
   $errors = TRUE;
 }
 
 if(!isset($_POST['r2'])){
-  print('Выберите количество конечностей.<br/>');
+  print('Необходимо выбрать количество конечностей.<br/>');
   $errors = TRUE;
 }
 
 if(!isset($_POST['cb'])){
-  print('Ознакомьтесь с контрактом.<br/>');
+  print('Необходимо ознакомиться с контрактом.<br/>');
   $errors = TRUE;
 }
 
