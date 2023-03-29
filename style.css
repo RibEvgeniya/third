@@ -1,0 +1,22 @@
+.body {
+    
+    display: flex;
+    font-size: 22px;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+label{
+    font-size: 22px;
+    size: 22px;
+}
+.main {
+    
+    padding: 60px;
+    margin-top: 30%;
+    width: 500px;
+    background-color: #4d6697;
+    border: 10px dotted rgb(75, 61, 82);
+    background: #70b3e3;
+}
